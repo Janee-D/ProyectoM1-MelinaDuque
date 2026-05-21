@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Información sobre el documento -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 permite usar caracteres especiales como acentos y ñ -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el sitio se vea bien en móviles -->
+    
+    <title>Duque Melina - M1 - Generador de paletas</title>
+    <!-- El titulo aparece en la pestaña del navegador -->
+
+    <!-- ESTILOS - Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FUENTES EXTERNAS - Google Fonts -->
+    <!-- Icono de colores -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=colors" />
+    
+    <!-- Preconexión a Google Fonts para mejor rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fuentes personalizadas: Cause y Englebert -->
+    <link href="https://fonts.googleapis.com/css2?family=Cause:wght@400;700&family=Englebert&family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- Título principal del proyecto -->
+        <h1>COLORFLY STUDIO - PALETA DE COLORES</h1>
+        <!-- Descripción breve -->
+        <p>Herramienta interna para branding y paletas aleatorias.</p>
+    </header>
+
+
+    <!-- Contenedor principal con la interfaz -->
+    <main class="main-container">
+
+
+
+        <!-- SECCIÓN DE CONTROLES - Configuración de la paleta -->
+        <section id="configuracion" class="controls">
+            
+            <!-- Icono decorativo de colores -->
+            <span class="material-symbols-outlined">colors</span>
+            
+            <!-- Título de la sección -->
+            <h2>Configura tu paleta</h2>
+            
+
+
+
+            <!-- CONTROL 1: Seleccionar cantidad de colores -->
+            <div class="control-group">
+                <label for="paletteSize">Cantidad</label>
+                <select id="paletteSize">
+                    <option value="6">6 Colores</option>
+                    <option value="8">8 Colores</option>
+                    <option value="9">9 Colores</option>
+                </select>
+            </div>
+
+
+
+            <!-- CONTROL 2: Seleccionar formato de color (HEX o HSL) -->
+            <div class="control-group">
+                <label for="formatType">Formato</label>
+                <select id="formatType">
+                    <option value="hex">HEX</option>
+                    <option value="hsl">HSL</option>
+                </select>
+            </div>
+
+
+            <!-- Botón para generar la paleta -->
+            <button id="generateBtn" class="btn-generate">Generar paleta</button>
+        </section>
+        
+      
+
+        <!-- SECCIÓN DE VISUALIZACIÓN - Donde aparecen los colores -->
+        <section class="palette-display" id="paletteDisplay">
+        </section>
+    </main>
+
+    <!-- TOAST - Notificación temporal (feedback para el usuario) -->
+    <!-- Aparece cuando el usuario copia un color al portapapeles -->
+    <div id="toast" class="toast">Copiado al portapapeles</div>
+
+        
+
+    <!-- FOOTER - Pie de página -->
+    <footer>
+        <p>&copy; 2026 - Desarrollado por Melina Duque</p>
+    </footer>
+
+
+
+    <!-- SCRIPT - Vinculamos el archivo JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
