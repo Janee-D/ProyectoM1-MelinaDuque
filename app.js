@@ -109,6 +109,11 @@ function generatePalette() {
     // Leemos el formato elegido (hex o hsl)
     const format = formatTypeSelect.value;
     
+    formatTypeSelect.addEventListener('change', () => {
+    const boton = formatTypeSelect.options[formatTypeSelect.selectedIndex];
+    mostrarToast("Formato cambiado a " + boton.textContent, "info");
+    generatePalette();  // 
+});
     // Limpiamos el contenedor para empezar de cero
     paletteDisplay.innerHTML = '';
 
