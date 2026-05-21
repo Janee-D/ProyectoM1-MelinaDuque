@@ -7,20 +7,19 @@
  */
 :root {
   /* Paleta de colores */
-  --bg: #e8f7ff;        /* Fondo principal  */
-  --surface: #e8f7ff;;   /* Fondo de superficies */
-  --surface2: #e8f7ff;;  /* Fondo de superficies alternado */
-  --border: #e8f7ff;;   /* Color para bordes */
-  --text: #182c53;                     /* Texto principal*/
-  --text-muted: #001629;               /* Texto menos importante  */
-  --accent: #002842f5;                 /* Color de énfasis */
-  
- 
-  --radius: 8px;                       /* Radio de bordes redondeados */
-  
+  --bg: #e8f7ff;               /* Fondo principal  */
+  --surface: #e8f7ff;          /* Fondo de superficies */
+  --surface2: #e8f7ff;         /* Fondo de superficies alternado */
+  --border: #e8f7ff;           /* Color para bordes */
+  --text: #182c53;             /* Texto principal */
+  --text-muted: #001629;       /* Texto menos importante */
+  --accent: #002842f5;         /* Color de énfasis */
+
+  --radius: 8px;               /* Radio de bordes redondeados */
+
   /* Fuentes tipográficas */
-  --font-family: "Cause", cursive;     /* Fuente principal decorativa */
-  --font-mono: 'DM Mono', monospace;   /* Fuente monoespaciada  */
+  --font-family: "Cause", cursive;         /* Fuente principal decorativa */
+  --font-mono: 'DM Mono', monospace;       /* Fuente monoespaciada */
   --font-englebert: "Englebert", cursive;  /* Fuente alternativa */
 }
 
@@ -45,11 +44,11 @@
 }
 
 /* ============================================================
- * Configuración de material symbolo
+ * Configuración de material symbol
  * ============================================================
  */
 .material-symbols-outlined {
-  font-variation-settings: 
+  font-variation-settings:
   'FILL' 0,      /* Sin relleno (outline) */
   'wght' 400,    /* Peso/grosor normal */
   'GRAD' 0,      /* Sin gradiente */
@@ -59,39 +58,37 @@
 /* ============================================================
  * BODY - Estilos globales del documento
  * ============================================================
- * El body es el contenedor de todo lo visible en la página
  */
 body {
-  background: var(--bg);           /* Color de fondo */
-  color: var(--text);              /* Color de texto por defecto */
-  font-family: var(--font-englebert);  /* Fuente principal */
-  min-height: 100px;               /* Altura mínima: ocupar pantalla completa */
-  line-height: 1.2;                /* Espaciado entre líneas para legibilidad */
-  display: flex;                   /* Flex para distribuir elementos */
-  flex-direction: column;           /* En dirección vertical */
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-englebert);
+  min-height: 100px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ============================================================
  * 1- Encabezado de la página
  * ============================================================
- * Contiene el título y descripción del proyecto
  */
 header {
-  text-align: center;  /* Centra todo el contenido horizontalmente */
-  padding: 3px 3cm;    /* Espaciado interno */
+  text-align: center;
+  padding: 3px 3cm;
 }
 
 /* Título principal */
 h1 {
-  font-family: var(--font-family);              /* Fuente Cause */
-  letter-spacing: 5px;                         /* Espaciado extra entre letras */
-  margin-bottom: 1px;                          /* Espacio debajo del título */
-  text-transform: uppercase;                   /* Convierte todo a mayúsculas */
+  font-family: var(--font-family);
+  letter-spacing: 5px;
+  margin-bottom: 1px;
+  text-transform: uppercase;
 }
 
 /* Subtítulo o descripción */
 header p {
-  color: var(--text-muted);  /* Color más suave */
+  color: var(--text-muted);
   font-size: 20px;
 }
 
@@ -101,48 +98,45 @@ header p {
  * ============================================================
  */
 .main-container {
-  max-width: 1000px;          /* Ancho máximo para no ser demasiado ancho */
-  margin: 1px auto;             /* Centra el contenedor */
-  padding: 0px 10px;          /* Espaciado interno */
-  display: flex;              /* Activa flexbox */
-  flex-direction: column;      /* Los elementos se apilan verticalmente */
-  gap: 5px;                   /* Espacio entre elementos hijos */
+  max-width: 1000px;
+  margin: 1px auto;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 
 /* ============================================================
  * 3 - Panel de configuración
  * ============================================================
- * Esta es la sección donde el usuario elige:
- * - Cantidad de colores
- * - Formato (HEX o HSL)
  */
 .controls {
-  background: var(--surface);      /* Fondo del panel */
-  border-radius: var(--radius);    /* Bordes redondeados */
-  padding: 10px;                   /* Espaciado interno */
-  display: flex;                   /* Flexbox */
-  gap: 10px;                       /* Espacio entre elementos */
-  align-items: center;             /* Centra verticalmente */
-  justify-content: center;         /* Centra horizontalmente */
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Título de la sección de controles */
 .controls h2 {
   font-size: 30px;
-  font-family: var(--font-mono);   /* Fuente monoespaciada */
+  font-family: var(--font-mono);
   text-transform: uppercase;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
 /* Grupo de control: label + select */
 .control-group {
-  display: flex;          /* Flexbox para alinear label y select */
-  flex-direction: row;    /* Uno al lado del otro */
-  gap: 10px;              /* Espacio entre label y select */
-  align-items: center;    /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
 }
 
@@ -151,98 +145,94 @@ label {
   font-family: var(--font-englebert);
   font-size: 15px;
   text-transform: uppercase;
-  color: var(--text-muted);  /* Texto más suave */
-  letter-spacing: 1px;       /* Espaciado extra entre letras */
+  color: var(--text-muted);
+  letter-spacing: 1px;
 }
 
 /* Selectores (dropdowns) */
 select {
-  background: var(--surface2);     /* Color de fondo */
+  background: var(--surface2);
   color: var(--text);
   border-radius: 8px;
-  padding: 10px 10px;              /* Espaciado interno */
+  padding: 10px 10px;
   font-family: var(--font-mono);
-  cursor: pointer;                 /* Cursor de mano al pasar */
+  cursor: pointer;
   outline: none;
-  transition: border-color 0.2s;   /* Transición suave al focus */
+  transition: border-color 0.2s;
 }
 
 /* Cuando el select recibe foco (click) */
 select:focus {
-  border-color: var(--accent);     /* Cambia el color del borde */
+  border-color: var(--accent);
 }
 
 
 /* ============================================================
  * 4 - Botón principal de acción
  * ============================================================
- * El botón que dispara la generación de la paleta de colores
  */
 .btn-generate {
-  color: rgb(15, 40, 87);          /* Color del texto */
-  padding: 10px 10px;              /* Espaciado interno */
-  border-radius: 8px;              /* Bordes redondeados */
+  color: rgb(15, 40, 87);
+  padding: 10px 10px;
+  border-radius: 8px;
   font-family: var(--font-mono);
   font-weight: 400;
-  transition: all 0.3s ease;       /* Transición suave para animaciones */
+  transition: all 0.3s ease;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 /* Cuando el usuario pasa el mouse por el botón */
 .btn-generate:hover {
-  transform: translateY(-3px);     /* Se mueve 3px hacia arriba */
+  transform: translateY(-3px);
 }
 
 
 /* ============================================================
  * 5. VISUALIZACIÓN DE PALETA - Contenedor de colores
  * ============================================================
- * Aquí es donde se muestran todas las tarjetas de colores
- * generadas por JavaScript
  */
 .palette-display {
-  display: flex;                   /* Flexbox para distribuir colores */
-  justify-content: center;         /* Centra horizontalmente */
-  align-items: flex-start;         /* Alinea al inicio verticalmente */
-  gap: 15px;                       /* Espacio entre tarjetas */
-  padding: 10px;                   /* Espaciado interno */
-  height: 400px;                   /* Altura del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 10px;
+  height: 400px;
   border-radius: var(--radius);
-  overflow: hidden;                /* Corta contenido que se desborda */
+  overflow: hidden;
   background: var(--surface2);
-  min-height: 400px;               /* Altura mínima */
+  min-height: 400px;
 }
 
 /* ════════════════════════════════════════════════════════ */
 /* ESTRUCTURA DE UNA TARJETA DE COLOR */
 /* ════════════════════════════════════════════════════════ */
 
-/* Columna individual de color - Estructura vertical de cada tarjeta */
+/* Columna individual de color */
 .swatch-column {
-    display: grid;                 /* Grid para posicionamiento exacto */
-    grid-template-rows: auto 1fr;  /* 2 filas: arco + información */
+    display: grid;
+    grid-template-rows: auto 1fr;
     align-items: center;
     gap: 5px;
 }
 
-/* El arco/rectángulo de color (la parte visual grande) */
+/* El arco de color (la parte visual grande) */
 .swatch-arch {
     width: 90px;
     height: 290px;
-    border-radius: 100px 100px 0 0;  /* Forma de arco (redondeado arriba) */
-    transition: transform 0.5s ease;  /* Animación suave al hover */
+    border-radius: 100px 100px 0 0;
+    transition: transform 0.5s ease;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(174, 212, 255, 0.05);  /* Sombra sutil */
+    box-shadow: 0 4px 10px rgba(174, 212, 255, 0.05);
 }
 
-/* Cuando el usuario pasa el mouse sobre un color */
+/* Hover sobre un color */
 .swatch-arch:hover {
-    transform: scaleY(1.06);       /* Se agranda ligeramente en altura */
+    transform: scaleY(1.06);
 }
 
-
-/* Cuadrado pequeño que muestra el color en miniatura */
+/* Cuadrado pequeño de color en miniatura */
 .color-preview-mini {
     width: 90px;
     height: 30px;
@@ -262,29 +252,27 @@ select:focus {
 /* ============================================================
  * 6- Notificación temporal (feedback visual)
  * ============================================================
- * El toast es ese mensajito que aparece y desaparece solo
- * cuando el usuario copia un color al portapapeles
  */
 .toast {
-  position: fixed;                                        /* Se mantiene fijo en pantalla */
-  bottom: 10px;                                          /* A 10px desde el fondo */
+  position: fixed;
+  bottom: 10px;
   left: 80%;
-  transform: translateX(-200%) translateY(300px);        /* Inicialmente oculto (abajo) */
+  transform: translateX(-200%) translateY(300px);   /* Inicialmente oculto */
   background: var(--border);
   color: var(--text);
   padding: 10px 15px;
-  border-radius: 30px;                                   /* Forma de píldora */
+  border-radius: 30px;
   font-family: var(--font-mono);
   font-size: 15px;
   font-weight: 600;
-  z-index: 1000;                                         /* Encima de otros elementos */
-  transition: transform 0.8s cubic-bezier(1, 1, 1, 2);   /* Animación suave */
+  z-index: 1000;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);  /* ← corregido */
   text-transform: uppercase;
 }
 
 /* Cuando JavaScript agrega la clase 'show' */
 .toast.show {
-  transform: translateX(-50%) translateY(0);   /* Se desliza hacia arriba */
+  transform: translateX(-50%) translateY(0);
 }
 
 /* Variantes de tipo de toast */
@@ -310,48 +298,40 @@ select:focus {
 /* ============================================================
  * 7- Pie de página
  * ============================================================
- * Aparece al final de la página con información de créditos
  */
 footer {
   text-align: center;
-  padding: 0.5rem;          /* Espaciado interno */
+  padding: 0.5rem;
   border-top: none;
   color: var(--text-muted);
   font-size: 0.9rem;
-  margin-top: auto;       /* Se empuja al final gracias al flex en body */
+  margin-top: auto;
 }
 
 /* ============================================================
  * 8- Estilos para pantallas pequeñas
  * ============================================================
- * Se aplica cuando la pantalla es menor
- * a 480 píxeles de ancho (teléfonos móviles)
  */
 @media (max-width: 480px) {
-  /* Header - Reducir tamaño en móvil */
   header {
     padding: 1rem 0.5rem;
   }
 
-  /* H1 - Más pequeño y menos espaciado */
   h1 {
     font-size: clamp(1.2rem, 4vw, 1.8rem);
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
   }
 
-  /* Párrafo del header */
   header p {
     font-size: 14px;
   }
 
-  /* Main container - Más padding reducido */
   .main-container {
     padding: 0px 10px;
     gap: 10px;
   }
 
-  /* Controles - Apilados verticalmente con menos espacio */
   .controls {
     flex-direction: column;
     align-items: stretch;
@@ -359,26 +339,22 @@ footer {
     gap: 12px;
   }
 
-  /* Título de controles más pequeño */
   .controls h2 {
     font-size: 18px;
   }
 
-  /* Control group - Apilado */
   .control-group {
     flex-direction: column;
     align-items: stretch;
     gap: 5px;
   }
 
-  /* Inputs ocupan ancho completo */
   select,
   .btn-generate {
     width: 100%;
     padding: 10px;
   }
 
-  /* Paleta de colores - Más pequeña en móvil */
   .palette-display {
     height: auto;
     min-height: 300px;
@@ -387,7 +363,6 @@ footer {
     flex-wrap: wrap;
   }
 
-  /* Tarjetas de color más pequeñas */
   .swatch-arch {
     width: 60px;
     height: 200px;
@@ -398,12 +373,10 @@ footer {
     height: 20px;
   }
 
-  /* Texto del código más pequeño */
   .color-code-text {
     font-size: 10px;
   }
 
-  /* Footer más compacto */
   footer {
     padding: 1rem 0.5rem;
     font-size: 0.8rem;
