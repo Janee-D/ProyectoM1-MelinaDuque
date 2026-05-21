@@ -26,12 +26,8 @@ JavaScript — Lógica del negocio completa: algoritmo de generación de colores
 📦 Instalación y Despliegue Local
 Para ejecutar este proyecto de forma local en tu computadora:
 1. Cloná el repositorio:
-bashgit clone https://github.com/tu-usuario/tu-repositorio.git
-2. Ingresá a la carpeta del proyecto:
-bashcd tu-repositorio
-3. Abrí el archivo principal en tu navegador:
-bash# Opción A: abrí index.html directamente desde tu explorador de archivos
-# Opción B: usá Live Server si tenés VS Code instalado
+bashgit clone https://github.com/Janee-D/ProyectoM1-MelinaDuque.git
+
 
 No requiere instalación de dependencias ni servidor backend. Es 100% frontend estático.
 
