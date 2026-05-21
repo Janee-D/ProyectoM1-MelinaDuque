@@ -91,7 +91,7 @@ function generatePalette() {
     }
 
     renderPaleta();
-    mostrarToast("✅ ¡Paleta generada con éxito!", "exito");
+    mostrarToast("¡Paleta generada con éxito!", "exito");
 }
 
 
@@ -134,7 +134,7 @@ function renderPaleta() {
         // Clic para copiar el color al portapapeles
         arch.addEventListener('click', () => {
             navigator.clipboard.writeText(displayText).then(() => {
-                mostrarToast("📋 Copiado: " + color.texto, "copia");
+                mostrarToast("Copiado: " + color.texto, "copia");
             });
         });
 
@@ -181,14 +181,14 @@ generateBtn.addEventListener('click', generatePalette);
 // Cambio de formato → mismos colores, distinto formato
 formatTypeSelect.addEventListener('change', () => {
     const boton = formatTypeSelect.options[formatTypeSelect.selectedIndex];
-    mostrarToast("🎨 Formato cambiado a " + boton.textContent, "info");
+    mostrarToast(" Formato cambiado a " + boton.textContent, "info");
     renderPaleta();
 });
 
 // Cambio de cantidad → genera colores nuevos
 paletteSizeSelect.addEventListener('change', () => {
     const cantidadColores = paletteSizeSelect.value;
-    mostrarToast("📐 Mostrando " + cantidadColores + " colores", "info");
+    mostrarToast(" Mostrando " + cantidadColores + " colores", "info");
     generatePalette();
 });
 
